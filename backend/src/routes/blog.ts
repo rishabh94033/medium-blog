@@ -119,8 +119,6 @@ postRouter.get("/:id", async (c) => { // to get all the post for a specific id
         datasourceUrl: c.env.DATABASE_URL,
     }).$extends(withAccelerate())
    try{
-    const userId= c.get("userId")
-    const body = await c.req.json();
     const post= await prisma.post.findUnique({
         where: {
             id: c.req.param("id")
@@ -143,7 +141,8 @@ post
 }catch(err){
      c.status(403);
      return c.json({
-        message:"Error while fetching"
+        message:"Error while fetching",
+        error:err
     })
   }
 });

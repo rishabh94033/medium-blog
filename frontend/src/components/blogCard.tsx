@@ -30,7 +30,9 @@ export function BlogCard({author,content,title,id}:BlogProp){
                        {title}
                    </div>
                    <div className="text-md font-thin">
-                       {content}
+                   {`${(Math.ceil(content.length))>100 ? content.substring(0,100)+ ".....": content}`}
+
+                       
                    </div>
                    <div className="text-slate-500 text-sm font-thin pt-4">
                        {`${Math.ceil(content.length / 100)} minute(s) read`}
