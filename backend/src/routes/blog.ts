@@ -125,13 +125,20 @@ postRouter.get("/:id", async (c) => { // to get all the post for a specific id
         where: {
             id: c.req.param("id")
           },
+          select:{
+            content:true,
+            title:true,
+            author:{
+              select:{
+                name:true
+              }
+            },
+            published:true
+          }
   })
 
   return c.json({
-    content: post?.content,
-    title: post?.title,
-    published:post?.published,
-    autherId: post?.authorId
+post
   })
 }catch(err){
      c.status(403);
