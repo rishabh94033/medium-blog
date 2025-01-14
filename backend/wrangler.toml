@@ -12,8 +12,8 @@ compatibility_date = "2024-12-30"
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 [vars]
-DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiOTM1MzIwOGItOGI5Yi00OTU3LWJhY2QtY2VkMDQ4MDE1ZTQzIiwidGVuYW50X2lkIjoiYTk5ZmY1YmE2ZTc5OTIwNDczZWQ1Y2QzZDVjZGNiY2YwY2E4NjVlOTlkMTgxMjI1MjIzODQ4ZGY3ODQxNTUzMCIsImludGVybmFsX3NlY3JldCI6IjUyNzA1ZjAwLWYzM2MtNDhkNC05OTZlLTU2NzY4YzZmOTU3MyJ9.92aRuZBiUgkJR40Uv4v4HuXp9PQX6Uqal_XRUgYKMGA"
-JWT_SECRET="mediumBlog"
+DATABASE_URL=""
+JWT_SECRET=""
 
 # [[r2_buckets]]
 # binding = "MY_BUCKET"
